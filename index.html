@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./Tochin2.png" alt="" height="150" width="150" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Fullstack Web Developer</p>
+                <h1>Hello World! <br> I'm <span>Tochi</span>, <br> a Fullstack web developer.</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./IMG-20230414-WA0006.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>As a video game enthusiast with a strong sense of Technophilia, I am constantly in search of the required knowledge and skill to create the desired output via the integration of creativity and technology.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Developing functional Websites.</li>
+                            <li><span>Game Designer</span><br>Designing immersive games.</li>
+                            <li><span>Animator</span><br>Creating animations.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Lagos School of Programming</span><br>Front end and Back-end web development training.</li>
+                        <li><span>Codeliber</span><br>HTML, CSS and JavaScript training.</li>
+                        <li><span>W3School</span><br>Software development training.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Primary</span><br>Phebean school</li>
+                        <li><span>Secondary</span><br>Baptist Academy</li>
+                        <li><span>Tertiary</span><br>Federal University of technology Owerri</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--services-->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in websites utilized for E-commerce, Games, Blogs, animations and portfolios. Designs will vary based on the clients preferences</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-xbox"></i>
+                    <h2>Game Design</h2>
+                    <p>I'm involved with the designing, creation and testing of video games ranging from mobile to desktop in several genres. From action to strategy to open-world RPG.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Animation</h2>
+                    <p>Although still mastering this skill, I'm confident in the creation of several animations which can be used for all sorts of endeavours, ranging from business to entertainment.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--portfolio-->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./1.jpg" height="300" width="300">
+                    <div class="layer">
+                        <h3>Websites</h3>
+                        <p>I specialize in websites utilized for E-commerce, Games, Blogs, animations and portfolios. Designs will vary based on the clients preferences</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./download.jpg" height="300" width="300">
+                    <div class="layer">
+                        <h3>Games</h3>
+                        <p>I'm involved with the designing, creation and testing of video games ranging from mobile to desktop in several genres. From action to strategy to open-world RPG.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./wp2301619.jpg" height="300" width="300">
+                    <div class="layer">
+                        <h3>Animations</h3>
+                        <p>Although still mastering this skill, I'm confident in the creation of several animations which can be used for all sorts of endeavours, ranging from business to entertainment.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--contact-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>omegadroid4@gmail.com</p>
+                    <p> <i class="fas fa-phone-square-alt"></i> 09033238211</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name Please" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©  Tochi 'MEGADROID' Nwadibia</p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link');
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+
+        function openmenu(){
+            sidemenu.style.right = '0';
+        }
+        function closemenu(){
+            sidemenu.style.right = '-200px';
+        }
+
+    </script>
+ 
+</body>
+</html>
